@@ -1,0 +1,137 @@
+{
+  "team": [
+	{
+      "grade": "none",
+	  "type": "Advisor",
+      "name": "Prof.Qingquan LI",
+	  "major": "Geographic Information Science",
+	  "Email": "liqq@szu.edu.cn",
+	  "image":"liqingquan.jpg"
+    },
+	{
+      "grade": "2016",
+	  "type": "Doctor",
+      "name": "Dr.Rui Cao",
+	  "major": "spatial-temporal data mining",
+	  "Email": "icaorui@foxmail.com",
+	  "image":"caorui.jpg"
+    },
+	{
+      "grade": "2015",
+	  "type": "Doctor",
+      "name": "Dr.Jinzhou Cao",
+	  "major": "Urban big data analysis and mining, understanding human mobility and urban environments",
+	  "Email": "caojinzhou@whu.edu.cn",
+	  "image":"caojinzhou.jpg"
+    },
+    {
+      "grade": "2017",
+	  "type": "Postgraduate",
+      "name": "Zhang Yatao",
+	  "major": "Spatio-temporal Big Data Analytics",
+	  "Email": "yatau@foxmail.com",
+	  "image":"zhangyatao.jpg"
+    },
+    {
+      "grade": "2017",
+	  "type": "Postgraduate",
+      "name": "Wang Kao",
+	  "major": "Spatio-temporal Big Data Analytics",
+	  "Email": "wk_szu1106@163.com",
+	  "image":"wangkao.jpg"
+    },
+	
+    {
+      "grade": "2017",
+	  "type": "Postgraduate",
+      "name": "Zhang Encheng",
+	  "major": "Spatio-temporal Big Data Analytics",
+	  "Email": "997720121@qq.com",
+	  "image":"zhangencheng.jpg"
+    },
+	
+    {
+      "grade": "2017",
+	  "type": "Postgraduate",
+      "name": "Mai Ke",
+	  "major": "Spatio-temporal Big Data Analytics",
+	  "Email": "maik@whu.edu.cn",
+	  "image":"maike.jpg"
+    },
+	
+    {
+      "grade": "2017",
+	  "type": "Postgraduate",
+      "name": "Zhu Tingting",
+	  "major": "Urban Building Function Identification",
+	  "Email": "1693588019@qq.com",
+	  "image":"zhutingting.jpg"
+    },
+	
+    {
+      "grade": "2017",
+	  "type": "Postgraduate",
+      "name": "Li Qiuping",
+	  "major": "Data Visualization",
+	  "Email": "liqiupingVVV@gmail.com",
+	  "image":"liqiuping.jpg"
+    },
+    {
+      "grade": "2016",
+	  "type": "Postgraduate",
+      "name": "Luan Zhaoliang ",
+	  "major": "Spatio-temporal Big Data Analytics",
+	  "Email": "Luan_zhaoliang@163.com",
+	  "image":"luanzhaoliang.jpg"
+    },
+    {
+      "grade": "2016",
+	  "type": "Postgraduate",
+      "name": "Chen Sida",
+	  "major": "Inventory Management",
+	  "Email": "95764484@qq.com",
+	  "image":"chensida.jpg"
+    },
+    {
+      "grade": "2016",
+	  "type": "Postgraduate",
+      "name": "Zhao Tianhong",
+	  "major": "Spatio-temporal data mining& Route optimization algorithm",
+	  "Email": "zhaoteanhong@gmail.com",
+	  "image":"zhaotianhong.jpg"
+    },
+    {
+      "grade": "2016",
+	  "type": "Postgraduate",
+      "name": "Wei Cui",
+	  "major": "Spatio-temporal Big Data Analytics",
+	  "Email": "tuantuanhecaicai@126.com",
+	  "image":"weicui.jpg"
+    },
+    {
+      "grade": "2016",
+	  "type": "Postgraduate",
+      "name": "Li Lefei",
+	  "major": "spatio-temporal data mining",
+	  "Email": "824893020@qq.com",
+	  "image":"lilefei.jpg"
+    },
+    {
+      "grade": "2015",
+	  "type": "Postgraduate",
+      "name": "Li Xiaona",
+	  "major": "Spatial-temporal Data Analytics and Mining",
+	  "Email": "",
+	  "image":"lixiaona.jpg"
+    },
+    {
+      "grade": "2015",
+	  "type": "Postgraduate",
+      "name": "Ye Zegui",
+	  "major": "Trajectory Data Analytics",
+	  "Email": "494309467@qq.com",
+	  "image":"yezegui.jpg"
+    }
+	   
+  ]
+}
