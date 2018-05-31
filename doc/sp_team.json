@@ -121,7 +121,15 @@
 	  "type": "Postgraduate",
       "name": "Li Xiaona",
 	  "major": "Spatial-temporal Data Analytics and Mining",
-	  "Email": "",
+	  "Email": "1092041224@qq.com",
+	  "image":"lixiaona.jpg"
+    },
+	 {
+      "grade": "2015",
+	  "type": "Postgraduate",
+      "name": "Li Bo",
+	  "major": "Power logistics",
+	  "Email": "726510053@qq.com",
 	  "image":"lixiaona.jpg"
     },
     {
