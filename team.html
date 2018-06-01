@@ -20,60 +20,113 @@
 
     <!-- Custom styles for this theme -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+	<!-- jQuery Version 3.1.1 -->
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
     <style>
     .navbar-toggler {
         z-index: 1;
     }
-    
+    .sp-nav-a:hover {
+        background: none!important;
+    }
     @media (max-width: 576px) {
         nav > .container {
             width: 100%;
         }
     }
+	@media(max-width:768px){
+		h1{
+			font-size: 20px!important;
+			margin: 0;
+		}
+		p,li,h3{
+			font-size: 16px;
+			margin: 0px;
+		}
+	}
+	.sp_team_font{
+	font-size: 16px!important;
+	}
     </style>
+	<script type="text/JavaScript">
+        $(document).ready(function(){
+            $.ajax({
+                type: 'GET',
+                url: "https://spatialsmart.github.io/doc/sp_team.json",
+                dataType: 'json',
+                success: function(data) {
+                    var team=data.team;
+                    for(var i= 0;i<team.length;i++) {
+                        var temp = "<div class=\"col-lg-2 col-lg-offset-1  col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 \">\n" +
+                            "\t\t\t\t\t<div class=\"row \"><img class=\"img-responsive\" src=\"img/"+team[i].image+"\" ></div>\n" +
+                            "\t\t\t\t\t<div class=\"row \">\n" +
+                            "\t\t\t\t\t\t<a class=\"sp_team_font \" href=\"#\"><a class=\"sp_team_font \" href=\"#\"><b>"+team[i].name+"</b><br>\n" +
+                            "\t\t\t\t\t\t\t<small> Major In : "+team[i].major+"<br> Email : "+team[i].Email+"</small><br><br></a>\n" +
+                            "\t\t\t\t\t</div>\n" +
+                            "\t\t\t\t</div>";
+                        if(team[i].grade!="none"&&!(team[i].grade==team[i-1].grade)){
+                            temp="<div class=\"col-lg-12  col-md-12 col-sm-12  \"><h4>"+team[i].grade+":</h4><hr style=\"width:100%;\"></div>"+temp;
+                        }
+						if(!team[i-1]||team[i].type!=team[i-1].type){
+                                temp="<div class=\"col-lg-12  col-md-12 col-sm-12  \"><h3>"+team[i].type+":</h3><hr style=\"width:100%;\"></div>"+temp;
+						}
+                        var obj = document.createElement("div");
+                        obj.innerHTML = temp;
+                        $("#sp_team").append(obj.childNodes);
+                    }
+                },
+                error: function(xhr, type) {
+                }
+            })
+        })
+	</script>
 
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
-        <div class="container">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="project.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="publications.html">Publications</a>
-                    </li>
-					 <li class="nav-item">
-                        <a class="nav-link page-scroll" href="team.html">Teams</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!-- Navigation -->
+<nav class="navbar   navbar-light  navbar-fixed-top " id="mainNav">
+    <div class="container">
+        <div class="container-fluid navbar-right">
+            <div class="navbar-header">
+                <button class="navbar-toggle  collapsed"  type="button" data-toggle="collapse" data-target="#navbarResponsive"  aria-expanded="false" >
+                    Menu <i class="fa fa-bars"></i>
+                </button>
 
-    <!-- Page Header -->
-    <header class="intro-header Tu-team-bg" style="background-image: url('img/team-bg.jpg')">
+            </div>
+
+        </div>
+        <div class="collapse navbar-collapse  " id="navbarResponsive">
+            <ul class="nav navbar-nav navbar-right ">
+                <li class="nav-item">
+                    <a class="nav-link sp-nav-a " href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sp-nav-a" href="project.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sp-nav-a" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sp-nav-a" href="team.html">Teams</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+
+<!-- Page Header -->
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
                         <h1>My Team</h1>
-                        <span class="subheading">This is us.</span>
                     </div>
                 </div>
             </div>
@@ -82,108 +135,10 @@
 
     <!-- Main Content -->
     <div class="container">
-        <div class="row">
-			<h3>Spatial Smart Group</h3>
-			<hr style="width:1014PX;"><br>
-                <div class="sp_fulwidth">
-				 <table class="light-table sp_fulwidth">					  
-					<tbody>
-					<tr class="sp_team_tr">							
-							<td class="row-index">	
-							<div class="sp_fulheight">
-								<img class="sp_st_profile" src="img/luanzhaoliang.jpg" alt="Mafolio">
-								
-								  <p>Luan Zhaoliang </p>
-								  <p class="sp_proTe_Infor"> Major In : Spatio-temporal Big Data Analytics</p>
-								  <p class="sp_proTe_Infor"> Email : Luan_zhaoliang@163.com </p>
-								</div>  
-							</td>
-							<td class="row-index">							
-							<div class="sp_fulheight">
-								<img class="sp_st_profile" src="img/liqiuping.jpg" alt="Mafolio">
-								
-								<p>Li Qiuping </p>
-								<p class="sp_proTe_Infor"> Major In : Data Visualization</p>
-								<p  class="sp_proTe_Infor"> Email : liqiupingVVV@gmail.com</p>
-								</div>								
-							</td>
-						</tr>
-						<tr class="sp_team_tr">
-							<td class="row-index">	
-							<div class="sp_fulheight">
-								<img class="sp_st_profile" src="img/chensida.jpg" alt="Mafolio">
-								
-								<p>Chen Sida </p>
-								<p class="sp_proTe_Infor"> Major In : Inventory Management</p>
-								<p  class="sp_proTe_Infor"> Email : 95764484@qq.com</p>
-								</div>
-								
-							</td>
-							<td class="row-index">
-							<div class="sp_fulheight">
-								<img class="sp_st_profile" src="img/wangkao.jpg" alt="Mafolio">
-								  <p>Wang Kao </p>
-								  <p class="sp_proTe_Infor"> Major In : Spatio-temporal Big Data Analytics</p>
-								  <p class="sp_proTe_Infor"> Email : wk_szu1106@163.com</p>
-								</div>  
-							</td>
-						</tr>
-						
-						<tr class="sp_team_tr">
-							<td class="row-index">	
-							<div class="sp_fulheight">
-								<img class="sp_st_profile" src="img/weicui.jpg" alt="Mafolio">
-								<p>Wei Cui</p>
-								<p class="sp_proTe_Infor"> Major In : Inventory Management</p>
-								<p  class="sp_proTe_Infor"> Email : 95764484@qq.com</p>
-								</div>
-								
-							</td>
-							<td class="row-index">	
-							<div class="sp_fulheight">
-								<img class="sp_st_profile" src="img/zhutingting.jpg" alt="Mafolio">
-								  <p>Zhu Tingting</p>
-								  <p class="sp_proTe_Infor"> Major In : Urban Building Function Identification</p>
-								  <p class="sp_proTe_Infor"> Email : 1693588019@qq.com</p>
-								</div>  
-							</td>
-						</tr>
-						<tr class="sp_team_tr">
-							<td class="row-index">	
-							<div class="sp_fulheight">
-								<img class="sp_st_profile" src="img/zhangencheng.jpg" alt="Mafolio">
-								<p>Zhang Encheng</p>
-								<p class="sp_proTe_Infor"> Major In : Spatio-temporal Big Data Analytics</p>
-								<p  class="sp_proTe_Infor"> Email : 997720121@qq.com</p>
-								</div>								
-							</td>
-							<td class="row-index">	
-							<div class="sp_fulheight">
-								<img class="sp_st_profile" src="img/maike.jpg" alt="Mafolio">
-								  <p>Mai Ke</p>
-								  <p class="sp_proTe_Infor"> Major In : Spatio-temporal Big Data Analytics</p>
-								  <p class="sp_proTe_Infor"> Email : maik@whu.edu.cn</p>
-								</div>  
-							</td>
-						</tr>
-						<tr class="sp_team_tr">
-							<td class="row-index">	
-							<div class="sp_fulheight">
-								<img class="sp_st_profile" src="img/zhaotianhong.jpg" alt="Mafolio">
-								<p>Zhao Tianhong</p>
-								<p class="sp_proTe_Infor"> Major In : Spatio-temporal data mining<br>&nbsp &nbsp &nbsp &nbsp Route optimization algorithm</p>
-								<p  class="sp_proTe_Infor"> Email : zhaoteanhong@gmail.com</p>
-								</div>
-								
-							</td>
-							<td>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-					
-            
-        </div>
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-6 col-xs-offset-3 " id="sp_team">
+
+		</div>
     </div>
 
     <hr>
@@ -192,7 +147,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                    
                     <p class="copyright text-muted">Copyright &copy; TU WEI 2018. </p>
                 </div>
@@ -200,17 +155,16 @@
         </div>
     </footer>
 
-    <!-- jQuery Version 3.1.1 -->
-    <script src="lib/jquery/jquery.js"></script>
 
-    <!-- Tether -->
-    <script src="lib/tether/tether.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<!-- Tether -->
+		<script src="lib/tether/tether.min.js"></script>
 
-    <!-- Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>>
+
+		<!-- Theme JavaScript -->
+	<script src="js/spatial.js"></script>
 
 </body>
 

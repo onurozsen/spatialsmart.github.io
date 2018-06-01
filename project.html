@@ -20,57 +20,95 @@
 
     <!-- Custom styles for this theme -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
-
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
     <style>
     .navbar-toggler {
         z-index: 1;
     }
-    
+    .sp-nav-a:hover {
+        background: none!important;
+    }
     @media (max-width: 576px) {
         nav > .container {
             width: 100%;
         }
     }
+    @media(max-width:768px){
+        h1{
+            font-size: 20px!important;
+            margin: 0;
+        }
+        p,li,h3{
+            font-size: 16px;
+            margin: 0px;
+        }
+    }
     </style>
-
+    <script type="text/JavaScript">
+        $(document).ready(function(){
+            $.ajax({
+                type: 'GET',
+                url: "https://spatialsmart.github.io/doc/sp_project.json",
+                dataType: 'json',
+                success: function(data) {
+                    var proj=data.projects;
+                    for(var i= 0;i<proj.length;i++) {
+                        var temp = "<div class=\"col-lg-1  col-md-1  col-sm-1 col-xs-1 \" ><b><p>"+(proj.length - i)+".<\/b>"+"</p>" + "</div>" +
+                            "<div class=\"col-lg-11  col-md-11  col-sm-11 col-xs-11 \" >"+"<p>"+proj[i].project +"<b>"+ proj[i].position+"<\/b></p>" + "</div>";
+                        console.log(temp);
+                        var obj = document.createElement("div");
+                        obj.innerHTML = temp;
+                        $("#sp_project").append(obj.childNodes);
+                    }
+                },
+                error: function(xhr, type) {
+                }
+            })
+        })
+    </script>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
-        <div class="container">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="project.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="publications.html">Publications</a>
-                    </li>
-					 <li class="nav-item">
-                        <a class="nav-link page-scroll" href="team.html">Teams</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!-- Navigation -->
+<nav class="navbar   navbar-light  navbar-fixed-top " id="mainNav">
+    <div class="container">
+        <div class="container-fluid navbar-right">
+            <div class="navbar-header">
+                <button class="navbar-toggle  collapsed"  type="button" data-toggle="collapse" data-target="#navbarResponsive"  aria-expanded="false" >
+                    Menu <i class="fa fa-bars"></i>
+                </button>
 
-    <!-- Page Header -->
-    <header class="intro-header" style="background-image: url('img/poject-bg.jpg')">
+            </div>
+
+        </div>
+        <div class="collapse navbar-collapse  " id="navbarResponsive">
+            <ul class="nav navbar-nav navbar-right ">
+                <li class="nav-item">
+                    <a class="nav-link sp-nav-a " href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sp-nav-a" href="project.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sp-nav-a" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sp-nav-a" href="team.html">Teams</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+
+<!-- Page Header -->
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
                         <h1>Projects</h1>
                         <h2 class="subheading"></h2>
@@ -84,40 +122,10 @@
     <article>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-				 <table class="light-table sp_fulwidth">					  
-					<tbody>
-					<tr>
-						<td><div class="sp_fulheight"> <a href="http://spatial.szu.edu.cn/projects_details?id=122" target="_blank" title="Data Driven Evaluation for Urban Planning (K-17014-1), The Tsinghua University Open Fund for Urban Transformation Research, 2017-2019, Co-PI.">Data Driven Evaluation for Urban Planning (K-17014-1), The Tsinghua University Open Fund for Urban Transformation Research, 2017-2019, <b>Co-PI.</b></a></div></td>
-					</tr> 
-					<tr>
-						<td><div class="sp_fulheight"><a href="http://spatial.szu.edu.cn/projects_details?id=82" target="_blank" title="Urban big data driven transportation analytic (2016065), Natural Science Foundation of Shenzhen University, 2016-2018, PI.">Urban big data driven transportation analytic (2016065), Natural Science Foundation of Shenzhen University, 2016-2018, <b>PI</b>.</a></div></td>
-					</tr> 
-					<tr>
-						<td><div class="sp_fulheight"> <a href="http://spatial.szu.edu.cn/projects_details?id=123" target="_blank" title="Multi-source spatial-temporal trajectories driven human activity and transportation analysis(KF-2016-02-009), The Open Fund of Key Laboratory of Urban Land Resources Monitoring and Simulation, Ministry of Land and Resources, 2016-2018, PI.">Multi-source spatial-temporal trajectories driven human activity and transportation analysis(KF-2016-02-009), The Open Fund of Key Laboratory of Urban Land Resources Monitoring and Simulation, Ministry of Land and Resources, 2016-2018,  <b>PI</b>.</a></div></td></tr>
-					<tr>
-						<td><div class="sp_fulheight"><a href="http://spatial.szu.edu.cn/projects_details?id=7" target="_blank" title="Spatial-temporal Modelling and Optimization for Large Scale City Logistics in Time Varying Transportation Network. Natural Science Foundation of China. 2015.1-2017.12. PI.">Spatial-temporal Modelling and Optimization for Large Scale City Logistics in Time Varying Transportation Network. Natural Science Foundation of China. 2015.1-2017.12.  <b>PI</b>.</a></div></td>
-					</tr>
-					<tr>
-						<td><div class="sp_fulheight"><a href="http://spatial.szu.edu.cn/projects_details?id=29" target="_blank" title="Spatial-temporal Modelling for City Logistics Based on Traffic Information. China Postdoctoral Science Foundation Funded Project. PI.">Spatial-temporal Modelling for City Logistics Based on Traffic Information. China Postdoctoral Science Foundation Funded Project.  <b>PI</b>.</a></div></td>
-					</tr>
-					<tr>
-						<td><div class="sp_fulheight"> <a href="http://spatial.szu.edu.cn/projects_details?id=8" target="_blank" title="Big Data Driven Metro Station Location. Funding by urban planning, Land & Resource Commission of Shenzhen Municipality. PI.">Big Data Driven Metro Station Location. Funding by urban planning, Land & Resource Commission of Shenzhen Municipality.  <b>PI</b>.</a></div></td>
-					</tr>
-					<tr>
-						<td><div class="sp_fulheight"><a  target="_blank" title="Modelling and Analysis of Urban Road Congestion with Vehicle GPS data and Smart Card Data. Funding by Transportation Commission of Shenzhen Municipality. Co-PI. ">Modelling and Analysis of Urban Road Congestion with Vehicle GPS data and Smart Card Data. Funding by Transportation Commission of Shenzhen Municipality. <b>Co-PI.</b> </a></div></td>
-					</tr>
-					<tr>
-						<td><div class="sp_fulheight"><a  target="_blank" title="Using mobile phone tracking data to analyze interactions between group activity patterns and urban spatial structures and to select facility. Natural Science Foundation of China. 2013.1-2016.12 (PI: Shilung-SHAW). Research Assistant.">Using mobile phone tracking data to analyze interactions between group activity patterns and urban spatial structures and to select facility. Natural Science Foundation of China. 2013.1-2016.12 (PI: Shilung-SHAW). <b>Research Assistant.</b></a></div></td>
-					</tr>
-					<tr>
-						<td><div class="sp_fulheight"><a  target="_blank" title="Social network spatiotemporal data model and hot events evolution analysis. Natural Science Foundation of China. 2014.1-2016.1 (PI: Qingquan-LI, President of Shenzhen University). Research Assistant.">Social network spatiotemporal data model and hot events evolution analysis. Natural Science Foundation of China. 2014.1-2016.1 (PI: Qingquan-LI, President of Shenzhen University). <b>Research Assistant.</b></a></div></td>
-					</tr>
-				</tbody>
-				</table>
-				</ul>
-                   
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" id="sp_project">
+                    <hr style="width:100%;"><br>
                 </div>
+
             </div>
         </div>
     </article>
@@ -128,7 +136,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                   
                     <p class="copyright text-muted">Copyright &copy; TU WEI 2018. </p>
                 </div>
@@ -136,17 +144,17 @@
         </div>
     </footer>
 
-    <!-- jQuery Version 3.1.1 -->
-    <script src="lib/jquery/jquery.js"></script>
+<!-- jQuery Version 3.1.1 -->
 
-    <!-- Tether -->
-    <script src="lib/tether/tether.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<!-- Tether -->
+<script src="lib/tether/tether.min.js"></script>
 
-    <!-- Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/spatial.js"></script>
 
 </body>
 

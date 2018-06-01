@@ -113,7 +113,7 @@ blockquote {
         &.is-fixed {
             /* when the user scrolls down, we hide the header right above the viewport */
             position: fixed;
-            top: -87px;
+            top: -70px;
             background-color: fade-out(white, .1);
             border-bottom: 1px solid darken(white, .05);
             -webkit-transition: -webkit-transform 0.2s;
@@ -413,4 +413,7 @@ img::-moz-selection {
 
 body {
     -webkit-tap-highlight-color: @theme-primary;
+}
+.sp-nav-a:hover {
+    background: none!important;
 }

@@ -95,14 +95,6 @@
     {
       "grade": "2016",
 	  "type": "Postgraduate",
-      "name": "Zhao Tianhong",
-	  "major": "Spatio-temporal data mining& Route optimization algorithm",
-	  "Email": "zhaoteanhong@gmail.com",
-	  "image":"zhaotianhong.jpg"
-    },
-    {
-      "grade": "2016",
-	  "type": "Postgraduate",
       "name": "Wei Cui",
 	  "major": "Spatio-temporal Big Data Analytics",
 	  "Email": "tuantuanhecaicai@126.com",
@@ -115,6 +107,14 @@
 	  "major": "spatio-temporal data mining",
 	  "Email": "824893020@qq.com",
 	  "image":"lilefei.jpg"
+    },
+    {
+      "grade": "2016",
+	  "type": "Postgraduate",
+      "name": "Zhao Tianhong",
+	  "major": "Spatio-temporal data mining& Route optimization algorithm",
+	  "Email": "zhaoteanhong@gmail.com",
+	  "image":"zhaotianhong.jpg"
     },
     {
       "grade": "2015",
@@ -130,7 +130,7 @@
       "name": "Li Bo",
 	  "major": "Power logistics",
 	  "Email": "726510053@qq.com",
-	  "image":"lixiaona.jpg"
+	  "image":"libo.jpg"
     },
     {
       "grade": "2015",

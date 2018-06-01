@@ -36,18 +36,7 @@ jQuery(document).ready(function($) {
                 }
                 this.previousTop = currentTop;
             });
-	   $.ajax({
-		    type: 'GET',
-		    url: "https://spatialsmart.github.io/doc/sp_project.csv", 
-		    dataType: 'csv', 
-		    success: function(data) { 
-		    	console.log(data)
-		    },
-		    error: function(xhr, type) {
-		    	console.log(xhr)
-		    	console.log(type)
-		    }
-	    }
     }
+
 
 });

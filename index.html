@@ -6,12 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="liqiuping">
 
     <title>Spatial Smart</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Additional fonts for this theme -->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -23,14 +23,27 @@
 
     <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
     <style>
-    .navbar-toggler {
-        z-index: 1;
+    .sp-nav-a:hover {
+        background: none!important;
     }
     
     @media (max-width: 576px) {
         nav > .container {
             width: 100%;
         }
+    }
+    @media(max-width:768px){
+        h1{
+            font-size: 20px!important;
+            margin: 0;
+        }
+        p,li,h3{
+            font-size: 16px;
+            margin: 0px;
+        }
+    }
+    .font_kepler{
+        font-family: keplerw08;
     }
     </style>
 
@@ -39,42 +52,45 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
+    <nav class="navbar   navbar-light  navbar-fixed-top " id="mainNav">
         <div class="container">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+            <div class="container-fluid navbar-right">
+                <div class="navbar-header">
+                    <button class="navbar-toggle  collapsed"  type="button" data-toggle="collapse" data-target="#navbarResponsive"  aria-expanded="false" >
+                        Menu <i class="fa fa-bars"></i>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="collapse navbar-collapse  " id="navbarResponsive">
+                <ul class="nav navbar-nav navbar-right ">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html">Home</a>
+                        <a class="nav-link sp-nav-a " href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="about.html">About</a>
+                        <a class="nav-link sp-nav-a" href="project.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="project.html">Projects</a>
+                        <a class="nav-link sp-nav-a" href="publications.html">Publications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="publications.html">Publications</a>
-                    </li>
-					 <li class="nav-item">
-                        <a class="nav-link page-scroll" href="team.html">Teams</a>
+                        <a class="nav-link sp-nav-a" href="team.html">Teams</a>
                     </li>
                 </ul>
             </div>
         </div>
+
     </nav>
 
     <!-- Page Header -->
     <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>TU WEI</h1>
-                        <span class="subheading ">An Researcher In Urban informatics</span>
-						<span class="subheading">tuwei@szu.edu.cn</span>
+                        <h1>SPATIAL SMART</h1>
+						<!-span class="subheading"tuwei@szu.edu.cn/span->
                     </div>
                 </div>
             </div>
@@ -84,44 +100,52 @@
     <!-- Main Content -->
     <div class="container">
         <div class="row">
-          <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                <div class="post-preview">
-                    <a href="http://spatial.szu.edu.cn/projects_details?id=82">
-                        <h2 class="post-title">
-                            Urban Big Data Driven Transportation Analytic
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Natural Science Foundation of Shenzhen University
-                        </h3>
-                    </a>
-                    <p class="post-meta">Host by <a href="#">Tu Wei</a> &nbsp 2016-2018</p>
+           <div class="col-lg-2 col-lg-offset-4   col-md-2 col-md-offset-4  col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-2   "> <img class="img-responsive" src="img/tuwei.jpg" alt="Tu Wei">
+           </div>
+           <div class="col-lg-4 col-md-6 col-sm-4 col-xs-4  ">
+			   <h1 class="align-bottom" style="margin-top: 0;">WEI TU </h1>
+			   <p class="align-bottom"> Urban Researcher/Data analyst</p>
+               <p class="align-bottom"> tuwe@szu.edu.cn</p>
+           </div>
+
+	    </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8  col-sm-offset-2 col-xs-8  col-xs-offset-2">
+                <p ><br> <b>Wei Tu</b> is senior associate research fellow at the department of geo-spatial information engineering, School of Architecture and Urban Planning, Shenzhen University. He is a visiting scholar at Senseable City Lab, MIT. He obtained the Ph.D from State Key Laboratory of Survey, Mapping and Remote Sensing, Wuhan University.</p>
+                <p> His research interests focus on the urban informatics, including automatics recognition of human activity-mobility from multi-source urban data, trajectory (i.e., taxi GPS, bus GPS, smart card data, social media, data, mobile phone data, and etc.) modelling, analysis and optimization, new analysis tool in dynamic-GIS. Wei Tu is always looking for motivated interns/students interested in GIS, big data, and urban studies. Please contact me for details!</p>
+
+                <p>
+                <ul>
+                    <li>Co-Chair of IV/10 Work Group Advanced Geospatial Applications for Smart Cities and Regions, ISPRS</li>
+                    <li>Member of American Association of Geographers</li>
+                    <li>Member of China Computer Federation</li>
+                </ul>
+                </p>
+                <p><br>
+                    <b>Education:</b><br>
+                    &nbsp &nbsp &nbsp &nbsp 2013&nbsp &nbsp Ph.D, Geographic Information Science, Wuhan University, China<br>
+                    &nbsp &nbsp &nbsp &nbsp 2009&nbsp &nbsp M.S., Geodesy and Geomatics, Wuhan University, China<br>
+                    &nbsp &nbsp &nbsp &nbsp 2007&nbsp &nbsp B.S., Geodesy and Geomatics, Wuhan University, China<br>
+                </p>
+                <p><br>
+                    <b>Contact:</b><br>
+                    &nbsp &nbsp &nbsp &nbsp  Science and Technology building Room 1402<br>
+                    &nbsp &nbsp &nbsp &nbsp Nanhai Avenue 3688<br>
+                    &nbsp &nbsp &nbsp &nbsp Shenzhen 518060, P.R. China<br>
+                    &nbsp &nbsp &nbsp &nbsp Email: tuwei@szu.edu.cn<br>
+
+                </p>
                 </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="http://spatial.szu.edu.cn/projects_details?id=123">
-                        <h2 class="post-title">
-                            Multi-source spatial-temporal trajectories driven human activity and transportation analysis
-                        </h2>
-						<h3 class="post-subtitle">
-                            The Open Fund of Key Laboratory of Urban Land Resources Monitoring and Simulation, Ministry of Land and Resources
-                        </h3>
-                    </a>
-                    <p class="post-meta">Host by <a href="#">Tu Wei</a> &nbsp 2016-2018</p>
-                </div>
-                <hr>
-                <div class="clearfix">
-                    <a class="btn btn-secondary float-right" href="project.html">Older Projects &rarr;</a>
-                </div>
-	</div>
             </div>
         </div>
+    </div>
    <hr>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                    
                     <p class="copyright text-muted">Copyright &copy; TU WEI 2018. </p>
                 </div>
@@ -130,16 +154,16 @@
     </footer>
 
     <!-- jQuery Version 3.1.1 -->
-    <script src="lib/jquery/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- Tether -->
     <script src="lib/tether/tether.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>>
 
     <!-- Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
+    <script src="js/spatial.js"></script>
 
 </body>
 
