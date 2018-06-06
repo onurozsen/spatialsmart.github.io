@@ -19,31 +19,11 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this theme -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/spatialsmart.min.css" rel="stylesheet">
     <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
     <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-    .sp-nav-a:hover {
-        background: none!important;
-    }
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
-        }
-    }
-    @media(max-width:768px){
-        h1{
-            font-size: 20px!important;
-            margin: 0;
-        }
-        p,li,h3{
-            font-size: 16px;
-            margin: 0px;
-        }
-    }
+
     </style>
     <script type="text/JavaScript">
         $(document).ready(function(){
@@ -115,7 +95,7 @@
                     <a class="nav-link sp-nav-a" href="project.html">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link sp-nav-a" href="publications.html">Publications</a>
+                    <a class="nav-link sp-nav-a sp-a-active" href="publications.html">Publications</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link sp-nav-a" href="team.html">Teams</a>
@@ -132,7 +112,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
-                        <h1>Publication</h1>
+                        <h6></h6>
                     </div>
                 </div>
             </div>
@@ -142,11 +122,11 @@
     <!-- Main Content -->
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8  col-sm-offset-2 col-xs-8  col-xs-offset-2" id="sp_articles">
+            <div class="col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-8  col-sm-offset-2 col-xs-8  col-xs-offset-2" id="sp_articles">
                 <h3>Journal articles:</h3>
                 <hr style="width:100%;"><br>
             </div>
-            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8  col-sm-offset-2 col-xs-8  col-xs-offset-2" id="sp_conference">
+            <div class="col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-8  col-sm-offset-2 col-xs-8  col-xs-offset-2" id="sp_conference">
                 <h3>Conference papers:</h3>
                 <hr style="width:100%;"><br>
             </div>
