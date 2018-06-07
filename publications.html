@@ -45,9 +45,9 @@
                         }
                     }
                     for(var i= 0;i<ar.length;i++) {
-                        var temp = "<div class='row'><div class=\"col-lg-4  col-md-4  col-sm-4  \" ><p><img class=\"img-responsive\" src=\"doc/"+ar[i].image+"\" alt=\""+ar[i].type+"\"></p><\/div>" +
+                        var temp = "<div class='row'><div class=\"col-lg-2  col-md-2  col-sm-2  \" ><p><img class=\"img-responsive\" src=\"doc/"+ar[i].image+"\" alt=\""+ar[i].type+"\"></p><\/div>" +
                            "<div class=\"col-lg-1  col-md-1  col-sm-1 \" >"+"<p><b>"+(ar.length-i)+".<\/b><\/p><\/div>"+
-                            "<div class=\"col-lg-7  col-md-7  col-sm-7  \" >"+"<p>"+ar[i].article.replace("Tu Wei","<b>Tu Wei<\/b>").replace("TU Wei","<b>Tu Wei<\/b>").replace("Wei Tu","<b>Wei Tu<\/b>").replace("Wei TU","<b>Wei TU<\/b>")  +"<b>"+ "<\/p><\/div></div>";
+                            "<div class=\"col-lg-9  col-md-9  col-sm-9  \" >"+"<p>"+ar[i].article.replace("Tu Wei","<b>Tu Wei<\/b>").replace("TU Wei","<b>Tu Wei<\/b>").replace("Wei Tu","<b>Wei Tu<\/b>").replace("Wei TU","<b>Wei TU<\/b>")  +"<b>"+ "<\/p><\/div></div>";
                         if(!ar[i-1]||!(ar[i].year==ar[i-1].year)){
                             temp="<h4>"+ar[i].year+":</h4><hr style=\"width:100%;\"><br>"+temp;
                         }
@@ -55,9 +55,9 @@
                         $("#sp_articles").append(obj.childNodes);
                     }
                     for(var i= 0;i<co.length;i++) {
-                        temp = "<div class='row'><div class=\"col-lg-4  col-md-4  col-sm-4  \" ><p><img class=\"img-responsive\" src=\"doc/"+co[i].image+"\" alt=\""+co[i].type+"\"></p><\/div>" +
+                        temp = "<div class='row'><div class=\"col-lg-2  col-md-2  col-sm-2  \" ><p><img class=\"img-responsive\" src=\"doc/"+co[i].image+"\" alt=\""+co[i].type+"\"></p><\/div>" +
                             "<div class=\"col-lg-1  col-md-1  col-sm-1 \" >"+"<p><b>"+(co.length-i)+".<\/b><\/p><\/div>"+
-                            "<div class=\"col-lg-7  col-md-7  col-sm-7  \" >"+"<p>"+co[i].article.replace("Tu Wei","<b>Tu Wei<\/b>").replace("TU Wei","<b>Tu Wei<\/b>").replace("Wei Tu","<b>Wei Tu<\/b>").replace("Wei TU","<b>Wei TU<\/b>").replace("涂伟","<b>涂伟<\/b>") +"<b>"+ "<\/p><\/div></div>";
+                            "<div class=\"col-lg-9  col-md-9  col-sm-9  \" >"+"<p>"+co[i].article.replace("Tu Wei","<b>Tu Wei<\/b>").replace("TU Wei","<b>Tu Wei<\/b>").replace("Wei Tu","<b>Wei Tu<\/b>").replace("Wei TU","<b>Wei TU<\/b>").replace("涂伟","<b>涂伟<\/b>") +"<b>"+ "<\/p><\/div></div>";
                         if(!co[i-1]||co[i].year!=co[i-1].year){
                              temp="<h4>"+co[i].year+":</h4><hr style=\"width:100%;\"><br>"+temp;
                         }

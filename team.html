@@ -25,8 +25,6 @@
 
     <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
     <style>
-    .navbar-toggler {
-
 	.sp_team_font{
 	font-size: 16px!important;
 	}
@@ -47,15 +45,31 @@
                             "\t\t\t\t\t\t\t<small> Major In : "+team[i].major+"<br> Email : "+team[i].Email+"</small><br><br></a>\n" +
                             "\t\t\t\t\t</div>\n" +
                             "\t\t\t\t</div>";
-                        if(team[i].grade!="none"&&!(team[i].grade==team[i-1].grade)){
-                            temp="<div class=\"col-lg-12  col-md-12 col-sm-12  \"><h4>"+team[i].grade+":</h4><hr style=\"width:100%;\"></div>"+temp;
-                        }
+
 						if(!team[i-1]||team[i].type!=team[i-1].type){
-                                temp="<div class=\"col-lg-12  col-md-12 col-sm-12  \"><h3>"+team[i].type+":</h3><hr style=\"width:100%;\"></div>"+temp;
+                                //temp="<div class=\"col-lg-12  col-md-12 col-sm-12  \"><h3>"+team[i].type+":</h3><hr style=\"width:100%;\"></div>"+temp;
+                            var hr="<div class=\"col-lg-12  col-md-12 col-sm-12  \"><h3>"+team[i].type+":</h3><hr style=\"width:100%;\"></div>"
+                            $("#sp_team").append(hr);
+                            var row = document.createElement("div");
+                            $(row).addClass("row");
+                            $("#sp_team").append(row);
 						}
+                        if(team[i].grade!="none"&&!(team[i].grade==team[i-1].grade)){
+                            //temp="<div class=\"col-lg-12  col-md-12 col-sm-12  \"><h4>"+team[i].grade+":</h4><hr style=\"width:100%;\"></div>"+temp;
+                            var hr="<div class=\"col-lg-12  col-md-12 col-sm-12  \"><h4>"+team[i].grade+":</h4><hr style=\"width:100%;\"></div>"
+                            $("#sp_team").append(hr);
+                            var row = document.createElement("div");
+                            $(row).addClass("row");
+                            $("#sp_team").append(row);
+                        }
+						if(!row||row.childElementCount>3){
+                            var row = document.createElement("div");
+                            $(row).addClass("row");
+                            $("#sp_team").append(row);
+                        }
                         var obj = document.createElement("div");
                         obj.innerHTML = temp;
-                        $("#sp_team").append(obj.childNodes);
+                        $(row).append(obj.childNodes);
                     }
                 },
                 error: function(xhr, type) {
