@@ -353,18 +353,18 @@ body {
   -webkit-tap-highlight-color: #0085A1; }
 .sp-nav-a:hover {
   background: none!important;
-  color:  #fff!important;
 }
 .sp-nav-a{
   color:  #9d9d9d!important
 }
 .sp-a-active {
-  color:  #fff!important;
+  color:#C93756!important;
 }
 @media (max-width: 576px) {
   nav > .container {
     width: 100%;
   }
+  
 }
 @media(max-width:768px){
   h1{

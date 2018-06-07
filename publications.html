@@ -49,7 +49,7 @@
                            "<div class=\"col-lg-1  col-md-1  col-sm-1 \" >"+"<p><b>"+(ar.length-i)+".<\/b><\/p><\/div>"+
                             "<div class=\"col-lg-9  col-md-9  col-sm-9  \" >"+"<p>"+ar[i].article.replace("Tu Wei","<b>Tu Wei<\/b>").replace("TU Wei","<b>Tu Wei<\/b>").replace("Wei Tu","<b>Wei Tu<\/b>").replace("Wei TU","<b>Wei TU<\/b>")  +"<b>"+ "<\/p><\/div></div>";
                         if(!ar[i-1]||!(ar[i].year==ar[i-1].year)){
-                            temp="<h4>"+ar[i].year+":</h4><hr style=\"width:100%;\"><br>"+temp;
+                            temp="<h4>"+ar[i].year+":</h4><hr style=\"width:100%;\">"+temp;
                         }
                         obj.innerHTML = temp;
                         $("#sp_articles").append(obj.childNodes);
@@ -59,7 +59,7 @@
                             "<div class=\"col-lg-1  col-md-1  col-sm-1 \" >"+"<p><b>"+(co.length-i)+".<\/b><\/p><\/div>"+
                             "<div class=\"col-lg-9  col-md-9  col-sm-9  \" >"+"<p>"+co[i].article.replace("Tu Wei","<b>Tu Wei<\/b>").replace("TU Wei","<b>Tu Wei<\/b>").replace("Wei Tu","<b>Wei Tu<\/b>").replace("Wei TU","<b>Wei TU<\/b>").replace("涂伟","<b>涂伟<\/b>") +"<b>"+ "<\/p><\/div></div>";
                         if(!co[i-1]||co[i].year!=co[i-1].year){
-                             temp="<h4>"+co[i].year+":</h4><hr style=\"width:100%;\"><br>"+temp;
+                             temp="<h4>"+co[i].year+":</h4><hr style=\"width:100%;\">"+temp;
                         }
                         obj.innerHTML = temp;
                         $("#sp_conference").append(obj.childNodes);
@@ -124,11 +124,11 @@
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-8  col-sm-offset-2 col-xs-8  col-xs-offset-2" id="sp_articles">
                 <h3>Journal articles:</h3>
-                <hr style="width:100%;"><br>
+                <hr style="width:100%;">
             </div>
             <div class="col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-8  col-sm-offset-2 col-xs-8  col-xs-offset-2" id="sp_conference">
                 <h3>Conference papers:</h3>
-                <hr style="width:100%;"><br>
+                <hr style="width:100%;">
             </div>
         </div>
     </div>
