@@ -37,31 +37,42 @@
                 dataType: 'json',
                 success: function(data) {
                     var team=data.team;
+
                     for(var i= 0;i<team.length;i++) {
                         var temp = "<div class=\"col-lg-2 col-lg-offset-1  col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 \">\n" +
-                            "\t\t\t\t\t<div class=\"row \"><img class=\"img-responsive\" src=\"img/"+team[i].image+"\" ></div>\n" +
-                            "\t\t\t\t\t<div class=\"row \">\n" +
-                            "\t\t\t\t\t\t<a class=\"sp_team_font \" href=\"#\"><a class=\"sp_team_font \" href=\"#\"><b>"+team[i].name+"</b><br>\n" +
-                            "\t\t\t\t\t\t\t<small> Major In : "+team[i].major+"<br> Email : "+team[i].Email+"</small><br><br></a>\n" +
-                            "\t\t\t\t\t</div>\n" +
-                            "\t\t\t\t</div>";
-
-						if(!team[i-1]||team[i].type!=team[i-1].type){
-                                //temp="<div class=\"col-lg-12  col-md-12 col-sm-12  \"><h3>"+team[i].type+":</h3><hr style=\"width:100%;\"></div>"+temp;
+                            "<div class=\"row \"><img class=\"img-responsive\" src=\"img/"+team[i].image+"\" ></div>\n" +
+                            "<div class=\"row \">\n" +
+                            "<a class=\"sp_team_font \" href=\"#\"><a class=\"sp_team_font \" href=\"#\"><b>"+team[i].name+"</b><br>\n" +
+                            " Email : "+team[i].Email+"</small><br><br></a>\n" +
+                            "</div>\n" +
+                            "</div>";
+							//校长模板特殊
+						if(team[i].type=="Advisor"){
+									"   <div class='col-lg-2 col-lg-offset-4 col-md-2 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-2 '> <img class='img-responsive' src=\"img/"+team[i].image+"\" >"+
+									 "  </div>"+
+									  " <div class='col-lg-4 col-md-6 col-sm-4 col-xs-4  '>"+
+										"   <p><b>"+team[i].name+"</b></p>"+
+										 "  <p class='align-bottom'>"+team[i].introduction+"</p>"+
+										  " <p class='align-bottom'>"+team[i].Email+"</p>"+
+									   "</div>";
+						}
+						//换类型重新起行
+						if(!team[i-1]||team[i].type!=team[i-1].type){                             
                             var hr="<div class=\"col-lg-12  col-md-12 col-sm-12  \"><h3>"+team[i].type+":</h3><hr style=\"width:100%;\"></div>"
                             $("#sp_team").append(hr);
                             var row = document.createElement("div");
                             $(row).addClass("row");
                             $("#sp_team").append(row);
 						}
-                        if(team[i].grade!="none"&&!(team[i].grade==team[i-1].grade)){
-                            //temp="<div class=\"col-lg-12  col-md-12 col-sm-12  \"><h4>"+team[i].grade+":</h4><hr style=\"width:100%;\"></div>"+temp;
+						//换年级重新起行
+                        if(!(team[i].grade==team[i-1].grade)){
                             var hr="<div class=\"col-lg-12  col-md-12 col-sm-12  \"><h4>"+team[i].grade+":</h4><hr style=\"width:100%;\"></div>"
                             $("#sp_team").append(hr);
                             var row = document.createElement("div");
                             $(row).addClass("row");
                             $("#sp_team").append(row);
                         }
+						//每行大于四个重新起行
 						if(!row||row.childElementCount>3){
                             var row = document.createElement("div");
                             $(row).addClass("row");
@@ -156,7 +167,7 @@
 		<script src="lib/tether/tether.min.js"></script>
 
 		<!-- Bootstrap Core JavaScript -->
-		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 		<!-- Theme JavaScript -->
 	<script src="js/spatial.js"></script>
