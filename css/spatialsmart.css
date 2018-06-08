@@ -371,7 +371,8 @@ body {
     font-size: 20px!important;
     margin: 0;
   }
-  p,li,h3,ul{
+
+  p,li,h3,ul,.sp_team_adviserFont{
     font-size: 14px;
     margin: 5px;
   }
