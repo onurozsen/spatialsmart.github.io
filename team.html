@@ -27,8 +27,14 @@
     <style>
 	.sp_team_font{
 	font-size: 14px!important;
+      text-align: center;
 	}
-	
+  .sp_team_adviserFont{
+      font-size: 20px;
+  }
+	.sp-team-unit{
+      padding: 20px;
+  }
     </style>
 	<script type="text/JavaScript">
         $(document).ready(function(){
@@ -40,26 +46,23 @@
                     var team=data.team;
 
                     for(var i= 0;i<team.length;i++) {
-                        var temp = "<div class=\"col-lg-2 col-lg-offset-1  col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-8 col-xs-offset-2\">\n" +
+                        var temp = "<div class=\"col-lg-3  col-md-3  col-sm-3  col-xs-8 sp-team-unit\">\n" +
                             "<div class=\"row \"><img class=\"img-responsive\" src=\"img/"+team[i].image+"\" ></div>\n" +
-                            "<div class=\"row \">\n" +
-                            "<a class=\"sp_team_font \" href=\"#\"><b>"+team[i].name+"</b><br>\n" +
-                            " Email : "+team[i].Email+"</small><br><br></a>\n" +
+                            "<div class=\"row sp_team_font  \">\n" +
+                            "<a href=\"#\"><b>"+team[i].name+"</b><br>\n" +
                             "</div>\n" +
                             "</div>";
 							//校长模板特殊
 						if(team[i].type=="Advisor"){
-								temp="   <div class=\"col-lg-2 col-lg-offset-1  col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 \"><p><img class='img-responsive' src=\"img/"+team[i].image+"\" ></p>"+
+								temp="   <div class=\"col-lg-3   col-md-3 col-sm-3  \"><p><img class='img-responsive' src=\"img/"+team[i].image+"\" ></p>"+
 									 "  </div>"+
 									  " <div class='col-lg-9 col-md-9 col-sm-9 col-xs-10  '>"+
-										"<a class=\"sp_team_font \" href=\"#\"><b>"+team[i].name+"</b><br></a>"+
-										 "  <p class='align-bottom sp_team_font'>"+team[i].introduction+"</p>"+
-										  " <p class='align-bottom '>"+team[i].Email+"</p>"+
+										 " <a> <p class='align-bottom sp_team_adviserFont'>"+team[i].introduction.replace("Prof.Qingquan Li","<b>Prof.Qingquan LI</b>")+"</p></a>"+
 									   "</div>";
 						}
 						//换类型重新起行
 						if(!team[i-1]||team[i].type!=team[i-1].type){                             
-                            var hr="<br><div class=\"col-lg-12  col-md-12 col-sm-12  \"><b>"+team[i].type+":</b><hr style=\"width:100%;\"></div>"
+                            var hr="<br><div class=\"row\"><b>"+team[i].type+":</b><hr style=\"width:100%;\"></div>"
                             $("#sp_team").append(hr);
                             var row = document.createElement("div");
                             $(row).addClass("row");
@@ -67,7 +70,7 @@
 						}
 						//换年级重新起行
                         if(team[i-1]&&!(team[i].grade==team[i-1].grade)){
-                            var hr="<div class=\"col-lg-12  col-md-12 col-sm-12  \"><h4>"+team[i].grade+":</h4><hr style=\"width:100%;\"></div>"
+                            var hr="<div class=\"row  \"><h4>"+team[i].grade+":</h4><hr style=\"width:100%;\"></div>"
                             $("#sp_team").append(hr);
                             var row = document.createElement("div");
                             $(row).addClass("row");
@@ -145,7 +148,7 @@
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 " id="sp_team">
 
-		</div>
+    </div>
     </div>
 
     <hr>
