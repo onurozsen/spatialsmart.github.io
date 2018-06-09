@@ -75,7 +75,7 @@
     },	
 	{
       "year": "2017",
-	  "type": "Journal article",
+	  "type": "Conference papers",
       "article": "LI Xiaona, TU Wei, SHENG Shaoqing, YUE Yang, LUO Nianxue, LI Qingquan. Revealing spatial variation and correlation of urban travels from big trajectory data. ISPRS Geospatial Week 2017. 2017. Wuhan, China, 53-57.(EI).",
 	  "level": "EI",
 	  "image": "2017_2.png"
@@ -187,7 +187,7 @@
     },
 	{
       "year": "2013",
-	  "type": "Journal article",
+	  "type": "Conference papers",
       "article": "SUN Xuan, Wei Yongchang, TU Wei. From CAD Design to Virtual Environment: Underground Pipeline Information System Construction for Smart City. International Conference on Frontier of Energy and Environment Engineering. 2013. Xiamen, .(EI).",
 	  "level": "EI",
 	  "image": "2013_1.png"
@@ -222,14 +222,14 @@
     },
 	{
       "year": "2010",
-	  "type": "Journal article",
+	  "type": "Conference papers",
       "article": "Wei TU, Zhixiang FANG, Qingquan LI. Exploring time varying shortest path of urban OD pairs based on floating car data.. 18th International Conference on Geoinformatics, Geoinformatics 2010. 2010. Beijing, .(EI).",
 	  "level": "EI",
 	  "image": "2010_1.png"
     },
 	{
       "year": "2008",
-	  "type": "Journal article",
+	  "type": "Conference papers",
       "article": "TU Wei, NIAN Xueluo, ZHAO Chen. The study of the framework and key technology of mobile emergency response platform. 2008 PROCEEDINGS OF INFORMATION TECHNOLOGY AND ENVIRONMENTAL SYSTEM SCIENCES. 2008. Kaifeng, CHINA, .(A&HCI).",
 	  "level": "A&HCI",
 	  "image": "2008_2.png"

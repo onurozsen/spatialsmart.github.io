@@ -9,7 +9,7 @@
     <meta name="author" content="">
 
     <title>Spatial Smart</title>
-
+    <link rel="shortcut icon" href=" img/spatial.ico" />
     <!-- Bootstrap Core CSS -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,6 +26,9 @@
 	p{
 	margin: 10px 0;
 	}
+  .sp-pro-index{
+      text-align: right;
+  }
     </style>
     <script type="text/JavaScript">
         $(document).ready(function(){
@@ -36,7 +39,7 @@
                 success: function(data) {
                     var proj=data.projects;
                     for(var i= 0;i<proj.length;i++) {
-                        var temp = "<div class=\"col-lg-1  col-md-1  col-sm-1 col-xs-1 \" ><b><p>"+(proj.length - i)+".<\/b>"+"</p>" + "</div>" +
+                        var temp = "<div class=\"col-lg-1  col-md-1  col-sm-1 col-xs-1 sp-pro-index\" ><b><p>"+(proj.length - i)+".<\/b>"+"</p>" + "</div>" +
                             "<div class=\"col-lg-11  col-md-11  col-sm-11 col-xs-11 \" >"+"<p>"+proj[i].project +"<b>"+ proj[i].position+"<\/b></p>" + "</div>";
                         console.log(temp);
                         var obj = document.createElement("div");
@@ -103,7 +106,7 @@
     <article>
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" id="sp_project">
+                <div class="col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0" id="sp_project">
 					<hr style="width:100%;"><br>
                 </div>
 

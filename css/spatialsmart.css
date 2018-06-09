@@ -5,7 +5,7 @@
  */
 body {
   font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
+  font-size: 18px;
   color: #333333; }
 
 p {
@@ -358,7 +358,7 @@ body {
   color:  #9d9d9d!important
 }
 .sp-a-active {
-  color:#C93756!important;
+  color: #c3c918 !important;
 }
 @media (max-width: 576px) {
   nav > .container {
@@ -371,7 +371,8 @@ body {
     font-size: 20px!important;
     margin: 0;
   }
-  p,li,h3{
+
+  p,li,h3,ul,.sp_team_adviserFont{
     font-size: 14px;
     margin: 5px;
   }
