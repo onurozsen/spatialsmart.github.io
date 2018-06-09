@@ -3,7 +3,7 @@
     {
       "year": "2018",
 	  "type": "Journal article",
-      "article": "Chen Yiyong, Liu Xiaoping*, Gao Wenxiu, Wang Raymond Yu , Li Yun, Tu Wei. Emerging social media data on measuring urban park use. Urban Forestry & Urban Greening. 2018, 30, 130-141.(SSCI).",
+      "article": "Yiyong Chen, Xiaoping Liu*, Wenxiu Gao, Raymond Yu Wang, Yun Li, Wei Tu. Emerging social media data on measuring urban park use. Urban Forestry & Urban Greening. 2018, 30, 130-141.(SSCI).",
 	  "level": "SSCI",
 	  "image": "2018_4.png"
     },
@@ -17,14 +17,14 @@
 	{
       "year": "2018",
 	  "type": "Journal article",
-      "article": "Wei TU, Zhongwen HU*, Lefei LI, Jinzhou CAO, Jincheng JIANG, Qiuping LI, Qingquan LI. Portraying Urban Functional Zones by Coupling Remote Sensing Imagery and Human Sensing Data. Remote sensing. 2018, 10(1), 141.(SCI).",
+      "article": "Wei Tu, Zhongwen Hu*, Lefei Li, Jinzhou Cao, Jincheng Jiang, Qiuping Li, Qingquan Li. Portraying Urban Functional Zones by Coupling Remote Sensing Imagery and Human Sensing Data. Remote sensing. 2018, 10(1), 141.(SCI).",
 	  "level": "SCI",
 	  "image": "2018_2.png"
     },
 	{
       "year": "2018",
 	  "type": "Journal article",
-      "article": "Li Qiuping, Tu Wei*, Zhuo Li. Reliable Rescue Routing Optimization for Urban Emergency Logistics under Travel Time Uncertainty. ISPRS International Journal of Geo-Information. 2018, 7, .(SCI).",
+      "article": "Qiuping Liu, Wei Tu*, Li Zhuo. Reliable Rescue Routing Optimization for Urban Emergency Logistics under Travel Time Uncertainty. ISPRS International Journal of Geo-Information. 2018, 7, .(SCI).",
 	  "level": "SCI",
 	  "image": "2018_1.png"
     },
@@ -39,7 +39,7 @@
 	{
       "year": "2017",
 	  "type": "Journal article",
-      "article": "Wei TU, Qingquan LI, Qiuping LI, Jiasong ZHU, Baoding ZHOU, Biyu CHEN. A spatial parallel heuristic approach for solving very large-scale vehicle routing problems. Transaction in GIS. 2017, 21(6), 1130-1147.(SCI).",
+      "article": "Wei Tu*, Qingquan Li, Qiuping Li, Jiasong Zhu, Baoding ZhouU, Biyu Chen. A spatial parallel heuristic approach for solving very large-scale vehicle routing problems. Transaction in GIS. 2017, 21(6), 1130-1147.(SCI).",
 	  "level": "SCI",
 	  "image": "2017_7.png"
     },
@@ -47,7 +47,7 @@
 	{
       "year": "2017",
 	  "type": "Journal article",
-      "article": "TU Wei, CAO Jinzhou, YUE Yang*, SHAW Shih-lung, ZHOU Meng, WANG Zhenshen, CHANG Xiaomeng, XU Yang, LI Qingquan. Coupling mobile phone and social media data: a new approach to understanding urban functions and diurnal patterns. International Journal of Geographical Information Science. 2017, 31(12), 2331-2358.(SCI).",
+      "article": "Wei Tu, Jinzhou Cao, Yang Yue*, Shih-lung Shaw, Meng Zhou, Zhenshen Wang, Xiaomeng Chang, Yang Xu, Qingquan Li. Coupling mobile phone and social media data: a new approach to understanding urban functions and diurnal patterns. International Journal of Geographical Information Science. 2017, 31(12), 2331-2358.(SCI).",
 	  "level": "SCI",
 	  "image": "2017_6.png"
     },
@@ -55,7 +55,7 @@
 	{
       "year": "2017",
 	  "type": "Journal article",
-      "article": "Meng Zhou, Donggen Wang, Qingquan Li, Yang Yue, Wei Tu, Rui Cao. Impacts of weather on public transport ridership: Results from mining data from different sources. Transportation Research Part C: Emerging Technologies. 2017, 75, 17–29.(SCI).",
+      "article": "Meng Zhou, Donggen Wang*, Qingquan Li, Yang Yue, Wei Tu, Rui Cao. Impacts of weather on public transport ridership: Results from mining data from different sources. Transportation Research Part C: Emerging Technologies. 2017, 75, 17–29.(SCI).",
 	  "level": "SCI",
 	  "image": "2017_5.png"
     },	
@@ -88,13 +88,13 @@
 	  "image": "2017_1.png"
     },
 	{
-      "year": "2016",
-	  "type": "Journal article",
-      "article": "Rui CAO, Wei TU*, Jinzhou CAO, Qingquan LI. Comparison of Urban Human Movements inferring from multi-sources spatio-temporal data. International Society for Photogrammetery and Remote Sensing Congress 2016. 2016. Prague, .(A&HCI).",
-	  "level": "A&HCI",
-	  "image": "2016_3.png"
-    },
-	{
+		"year": "2016",
+		"type": "Journal article",
+		"article": "Rui Cao, Wei Tu*, Jinzhou Cao, Qingquan L9. Comparison of Urban Human Movements inferring from multi-sources spatio-temporal data. International Society for Photogrammetery and Remote Sensing Congress 2016. 2016. Prague.(A&HCI).",
+		"level": "A&HCI",
+		"image": "2016_3.png"
+	  },
+	  {
       "year": "2016",
 	  "type": "Journal article",
       "article": "Wei TU*, Qingquan LI*, Zhixiang FANG, Shih-lung Shaw, Baoding ZHOU, Xiaomeng CHANG. Optimizing the locations of electric taxi charging stations: A spatial–temporal demand coverage approach. Transportation Research Part C: Emerging Technologies. 2016, 65, 172-189.(SCI).",
