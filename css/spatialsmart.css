@@ -5,7 +5,7 @@
  */
 body {
   font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #333333; }
 
 p {
@@ -360,6 +360,7 @@ body {
 .sp-a-active {
   color: #c3c918 !important;
 }
+
 @media (max-width: 576px) {
   nav > .container {
     width: 100%;

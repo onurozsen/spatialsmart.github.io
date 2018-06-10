@@ -21,7 +21,7 @@
     <!-- Custom styles for this theme -->
     <link href="css/spatialsmart.min.css" rel="stylesheet">
 	<!-- jQuery Version 3.1.1 -->
-	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 
     <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
     <style>
@@ -32,6 +32,9 @@
   }
 	.sp-team-unit{
       padding: 20px;
+  }
+  .sp-tesm-grade{
+      font-size: 1.2em;
   }
     </style>
 	<script type="text/JavaScript">
@@ -55,12 +58,12 @@
 								temp="   <div class=\"col-lg-3 col-lg-offset-0  col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2  \"><p><img class='img-responsive' src=\"doc/team/"+team[i].image+"\" ></p>"+
 									 "  </div>"+
 									  " <div class='col-lg-9 col-md-9 col-sm-9 col-xs-10  '>"+
-										 " <a> <p class='align-bottom sp_team_adviserFont'>"+team[i].introduction.replace("Prof.Qingquan Li","<b>Prof.Qingquan LI</b>")+"</p></a>"+
+										 " <a> <p class='align-bottom sp_team_adviserFont'>"+team[i].introduction+"</p></a>"+
 									   "</div>";
 						}
 						//换类型重新起行
 						if(!team[i-1]||team[i].type!=team[i-1].type){                             
-                            var hr="<br><div class=\"row\"><b>"+team[i].type+":</b><hr style=\"width:100%;\"></div>"
+                            var hr="<br><div class=\"row\"><h3>"+team[i].type+":</h3><hr style=\"width:100%;\"></div>"
                             $("#sp_team").append(hr);
                             var row = document.createElement("div");
                             $(row).addClass("row");
@@ -68,7 +71,7 @@
 						}
 						//换年级重新起行
                         if(team[i-1]&&!(team[i].grade==team[i-1].grade)){
-                            var hr="<div class=\"row  \"><h4>"+team[i].grade+":</h4><hr style=\"width:100%;\"></div>"
+                            var hr="<div class=\"row  sp-tesm-grade\">"+team[i].grade+":<hr style=\"width:100%;\"></div>"
                             $("#sp_team").append(hr);
                             var row = document.createElement("div");
                             $(row).addClass("row");
