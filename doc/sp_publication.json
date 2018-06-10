@@ -24,7 +24,7 @@
 	{
       "year": "2018",
 	  "type": "Journal article",
-      "article": "Qiuping Liu, Wei Tu*, Li Zhuo. Reliable Rescue Routing Optimization for Urban Emergency Logistics under Travel Time Uncertainty. ISPRS International Journal of Geo-Information. 2018, 7, .(SCI).",
+      "article": "Qiuping Li, Wei Tu*, Li Zhuo . Reliable Rescue Routing Optimization for Urban Emergency Logistics under Travel Time Uncertainty. ISPRS International Journal of Geo-Information. 2018, 7, .(SCI).",
 	  "level": "SCI",
 	  "image": "2018_1.png"
     },
@@ -39,7 +39,7 @@
 	{
       "year": "2017",
 	  "type": "Journal article",
-      "article": "Wei Tu*, Qingquan Li, Qiuping Li, Jiasong Zhu, Baoding ZhouU, Biyu Chen. A spatial parallel heuristic approach for solving very large-scale vehicle routing problems. Transaction in GIS. 2017, 21(6), 1130-1147.(SCI).",
+      "article": "Wei Tu*, Qingquan Li, Qiuping Li, Jiasong Zhu, Baoding Zhou, Biyu Chen. A spatial parallel heuristic approach for solving very large-scale vehicle routing problems. Transaction in GIS. 2017, 21(6), 1130-1147.(SCI).",
 	  "level": "SCI",
 	  "image": "2017_7.png"
     },
@@ -47,7 +47,7 @@
 	{
       "year": "2017",
 	  "type": "Journal article",
-      "article": "Wei Tu, Jinzhou Cao, Yang Yue*, Shih-lung Shaw, Meng Zhou, Zhenshen Wang, Xiaomeng Chang, Yang Xu, Qingquan Li. Coupling mobile phone and social media data: a new approach to understanding urban functions and diurnal patterns. International Journal of Geographical Information Science. 2017, 31(12), 2331-2358.(SCI).",
+      "article": "Wei Tu, Jinzhou Cao, Yang Yue*, Shih-lung Shaw, Meng Zhou, Zhensheng Wang, Xiaomeng Chang, Yang Xu, Qingquan Li. Coupling mobile phone and social media data: a new approach to understanding urban functions and diurnal patterns. International Journal of Geographical Information Science. 2017, 31(12), 2331-2358.(SCI).",
 	  "level": "SCI",
 	  "image": "2017_6.png"
     },
@@ -76,7 +76,7 @@
 	{
       "year": "2017",
 	  "type": "Conference papers",
-      "article": "LI Xiaona, TU Wei, SHENG Shaoqing, YUE Yang, LUO Nianxue, LI Qingquan. Revealing spatial variation and correlation of urban travels from big trajectory data. ISPRS Geospatial Week 2017. 2017. Wuhan, China, 53-57.(EI).",
+      "article": "Xiaona Li, Wei Tu, Shaoqing Shen, Yang Yue, Nianxue Luo, Qingquan Li. Revealing spatial variation and correlation of urban travels from big trajectory data. ISPRS Geospatial Week 2017. 2017. Wuhan, China, 53-57.(EI).",
 	  "level": "EI",
 	  "image": "2017_2.png"
     },	
@@ -88,16 +88,16 @@
 	  "image": "2017_1.png"
     },
 	{
-		"year": "2016",
-		"type": "Journal article",
-		"article": "Rui Cao, Wei Tu*, Jinzhou Cao, Qingquan L9. Comparison of Urban Human Movements inferring from multi-sources spatio-temporal data. International Society for Photogrammetery and Remote Sensing Congress 2016. 2016. Prague.(A&HCI).",
-		"level": "A&HCI",
-		"image": "2016_3.png"
-	  },
-	  {
+      "year": "2016",
+	  "type": "Conference papers",
+      "article": "Rui Cao, Wei Tu*, Jinzhou Cao, Qingquan Li. Comparison of Urban Human Movements inferring from multi-sources spatio-temporal data. International Society for Photogrammetery and Remote Sensing Congress 2016. 2016. Prague, .(A&HCI).",
+	  "level": "A&HCI",
+	  "image": "2016_3.png"
+    },
+	{
       "year": "2016",
 	  "type": "Journal article",
-      "article": "Wei TU*, Qingquan LI*, Zhixiang FANG, Shih-lung Shaw, Baoding ZHOU, Xiaomeng CHANG. Optimizing the locations of electric taxi charging stations: A spatial–temporal demand coverage approach. Transportation Research Part C: Emerging Technologies. 2016, 65, 172-189.(SCI).",
+      "article": "Wei Tu*, Qingquan Li*, Zhixiang Fang, Shih-lung Shaw, Baoding Zhou, Xiaomeng Chang. Optimizing the locations of electric taxi charging stations: A spatial–temporal demand coverage approach. Transportation Research Part C: Emerging Technologies. 2016, 65, 172-189.(SCI).",
 	  "level": "SCI",
 	  "image": "2016_2.png"
     },
@@ -111,21 +111,21 @@
 	{
       "year": "2016",
 	  "type": "Conference papers",
-      "article": "Wei TU, Rui CAO, Jinzhou CAO, Qingquan LI. Spatial-temporal variation of public transit ridership using smart card data and mobile phone data. Association of American Geographers Annual Meeting 2016. 2016. San Francisco,USA, .",
+      "article": "Wei Tu, Rui Cao, Jinzhou Cao, Qingquan Li. Spatial-temporal variation of public transit ridership using smart card data and mobile phone data. Association of American Geographers Annual Meeting 2016. 2016. San Francisco,USA, .",
 	  "level": "none",
 	  "image": "2016_01.png"
     },
 	{
       "year": "2015",
 	  "type": "Journal article",
-      "article": "Wei TU*, Qingquan LI*, Zhixiang FANG, Baoding ZHOU. A Novel Spatial-Temporal Voronoi Diagram-Based Heuristic Approach for Large-Scale Vehicle Routing Optimization with Time Constraints. ISPRS International Journal of Geo-Information. 2015, 4(4), 2019-2044.(SCI).",
+      "article": "Wei Tu*, Qingquan Li*, Zhixiang Fang, Baoding Zhou. A Novel Spatial-Temporal Voronoi Diagram-Based Heuristic Approach for Large-Scale Vehicle Routing Optimization with Time Constraints. ISPRS International Journal of Geo-Information. 2015, 4(4), 2019-2044.(SCI).",
 	  "level": "SCI",
 	  "image": "2015_5.png"
     },
 	{
       "year": "2015",
 	  "type": "Journal article",
-      "article": "Baoding Zhou , Qingquan Li *, Qingzhou Mao *, Wei Tu , Xing Zhang . Activity Sequence-Based Indoor Pedestrian Localization Using Smartphones. IEEE Transactions on Human-Machine Systems. 2015, 45(5), 562 - 574.(SCI).",
+      "article": "Baoding Zhou , Qingquan Li*, Qingzhou Mao*, Wei Tu , Xing Zhang . Activity Sequence-Based Indoor Pedestrian Localization Using Smartphones. IEEE Transactions on Human-Machine Systems. 2015, 45(5), 562 - 574.(SCI).",
 	  "level": "SCI",
 	  "image": "2015_4.png"
     },
@@ -139,28 +139,28 @@
 	{
       "year": "2015",
 	  "type": "Journal article",
-      "article": "Wei TU*, Qingquan LI, Xiaomeng CHANG, Yang yue, Jiasong ZHU. A Spatio-Temporal Decision Support Framework for Large Scale Logistics Distribution in the Metropolitan Area. Advances in Spatial Data Handling. 2015, 0, .(EI).",
+      "article": "Wei Tu, Qingquan Li, Xiaomeng Chang, Yang Yue, Jiasong Zhu. A Spatio-Temporal Decision Support Framework for Large Scale Logistics Distribution in the Metropolitan Area. Advances in Spatial Data Handling. 2015, 0, .(EI).",
 	  "level": "EI",
 	  "image": "2015_2.png"
     },
 	{
       "year": "2015",
 	  "type": "Journal article",
-      "article": "Meng ZHOU, Wei TU*, Qingquan LI, Yang YUE, Xiaomeng CHANG. Inferring Individual Physical Locations with Social Friendships. Geoinfomatics 2015. 2015. Wuhan, China, .(EI).",
+      "article": "Meng Zhou, Wei Tu*, Qingquan Li, Yang Yue, Xiaomeng Chang. Inferring Individual Physical Locations with Social Friendships. Geoinfomatics 2015. 2015. Wuhan, China, .(EI).",
 	  "level": "EI",
 	  "image": "2015_1.png"
     },
 	{
       "year": "2015",
 	  "type": "Conference papers",
-      "article": "Jinzhou Cao, Wei TU*, Qingquan LI, Meng ZHOU, Rui CAO. Exploring the distribution and dynamics of functional regions using mobile phone data and social media data. 14th International Conference on Computers in Urban Planning and Urban Management. 2015. Boston, USA, .",
+      "article": "Jinzhou Cao, Wei Tu*, Qingquan Li, Meng Zhou, Rui Cao. Exploring the distribution and dynamics of functional regions using mobile phone data and social media data. 14th International Conference on Computers in Urban Planning and Urban Management. 2015. Boston, USA, .",
 	  "level": "none",
 	  "image": "2015_01.png"
     },
 	{
       "year": "2014",
 	  "type": "Journal article",
-      "article": "Wei TU, Zhixiang FANG*, Qingquan LI, Shilung SHAW, Biyu CHEN. A bi-level Voronoi diagram-based metaheuristic for a large-scale multi-depot vehicle routing problem. Transportation Research Part E: Logistics and Transportation Review. 2014, 61, 84-97.(SCI).",
+      "article": "Wei Tu, Zhixiang Fang*, Qingquan Li, Shilung Shaw, Biyu Chen A bi-level Voronoi diagram-based metaheuristic for a large-scale multi-depot vehicle routing problem. Transportation Research Part E: Logistics and Transportation Review. 2014, 61, 84-97.(SCI).",
 	  "level": "SCI",
 	  "image": "2014_2.png"
     },
@@ -181,63 +181,63 @@
 	{
       "year": "2013",
 	  "type": "Journal article",
-      "article": "Zhixiang FANG*, Wei TU*, Qingquan LI*, Shih-Lung SHAW, Shunqing CHEN, Biyu CHEN. A Voronoi neighborhood-based search heuristic for distance/capacity constrained very large vehicle routing problems. International Journal of Geographical Information Science. 2013, 27(4), 741-764.(SCI).",
+      "article": "Zhixiang Fang*, Wei Tu*, Qingquan Li*, Shih-Lung Shaw, Shunqing Chen, Biyu Chen. A Voronoi neighborhood-based search heuristic for distance/capacity constrained very large vehicle routing problems. International Journal of Geographical Information Science. 2013, 27(4), 741-764.(SCI).",
 	  "level": "SCI",
 	  "image": "2013_2.png"
     },
 	{
       "year": "2013",
 	  "type": "Conference papers",
-      "article": "SUN Xuan, Wei Yongchang, TU Wei. From CAD Design to Virtual Environment: Underground Pipeline Information System Construction for Smart City. International Conference on Frontier of Energy and Environment Engineering. 2013. Xiamen, .(EI).",
+      "article": "Xuan Sun, Yongchang Wei, Wei Tu. From CAD Design to Virtual Environment: Underground Pipeline Information System Construction for Smart City. International Conference on Frontier of Energy and Environment Engineering. 2013. Xiamen, .(EI).",
 	  "level": "EI",
 	  "image": "2013_1.png"
     },
 	{
       "year": "2013",
 	  "type": "Conference papers",
-      "article": "Wei TU, Zhixiang FANG, Qingquan LI. An empirical analysis of Voronoi neighborhood characteristics of heuristic solutions for capitated vehicle routing problems. International Symposium on Recent Advances in Transport Modeling. OPTIMUM2013. 2013. Golden coast, Australia, .",
+      "article": "Wei Tu, Zhixiang Fang, Qingquan Li. An empirical analysis of Voronoi neighborhood characteristics of heuristic solutions for capitated vehicle routing problems. International Symposium on Recent Advances in Transport Modeling. OPTIMUM2013. 2013. Golden coast, Australia, .",
 	  "level": "none",
 	  "image": "2013_01.png"
     },		
 	{
       "year": "2012",
 	  "type": "Journal article",
-      "article": "Zhixiang FANG*, Shih-Lung SHAW, Wei TU*, Qingquan LI, Yuguang LI. Spatio temporal analysis of critical transportation links based on time geographic concepts: a case study of critical bridges in Wuhan, China. Journal of Transport Geography. 2012, 23(1), 44-59.(SSCI).",
+      "article": "Zhixiang Fang*, Shih-Lung Shaw, Wei Tu*, Qingquan Li, Yuguang Li. Spatio temporal analysis of critical transportation links based on time geographic concepts: a case study of critical bridges in Wuhan, China. Journal of Transport Geography. 2012, 23(1), 44-59.(SSCI).",
 	  "level": "SSCI",
 	  "image": "2012_2.png"
     },		
 	{
       "year": "2012",
 	  "type": "Journal article",
-      "article": "涂伟, 方志祥, 李清泉, 鲁仕维. 基于Voronoi邻近的物流车辆路径快速优化方法. 地球信息科学学报. 2012, 14(6), 781-78.(CSCD).",
+      "article": "涂伟, 方志祥*, 李清泉, 鲁仕维. 基于Voronoi邻近的物流车辆路径快速优化方法. 地球信息科学学报. 2012, 14(6), 781-78.(CSCD).",
 	  "level": "CSCD",
 	  "image": "2012_1.png"
     },
 	{
       "year": "2011",
 	  "type": "Journal article",
-      "article": "Zhixiang FANG*, Wei TU*, Qingquan LI, Qingquan LI. A multi-objective approach to scheduling joint participation with variable space and time preferences and opportunities. Journal of Transport Geography. 2011, 19(4), 623-634.(SSCI).",
+      "article": "Zhixiang Fang*, Wei Tu*, Qingquan Li, Qingquan Li. A multi-objective approach to scheduling joint participation with variable space and time preferences and opportunities. Journal of Transport Geography. 2011, 19(4), 623-634.(SSCI).",
 	  "level": "SSCI",
 	  "image": "2011_1.png"
     },
 	{
       "year": "2010",
 	  "type": "Conference papers",
-      "article": "Wei TU, Zhixiang FANG, Qingquan LI. Exploring time varying shortest path of urban OD pairs based on floating car data.. 18th International Conference on Geoinformatics, Geoinformatics 2010. 2010. Beijing, .(EI).",
+      "article": "Wei Tu, Zhixiang Fang, Qingquan Li. Exploring time varying shortest path of urban OD pairs based on floating car data.. 18th International Conference on Geoinformatics, Geoinformatics 2010. 2010. Beijing, .(EI).",
 	  "level": "EI",
 	  "image": "2010_1.png"
     },
 	{
       "year": "2008",
 	  "type": "Conference papers",
-      "article": "TU Wei, NIAN Xueluo, ZHAO Chen. The study of the framework and key technology of mobile emergency response platform. 2008 PROCEEDINGS OF INFORMATION TECHNOLOGY AND ENVIRONMENTAL SYSTEM SCIENCES. 2008. Kaifeng, CHINA, .(A&HCI).",
+      "article": "Wei Tu, Xueluo Nian, Chen Zhao. The study of the framework and key technology of mobile emergency response platform. 2008 PROCEEDINGS OF INFORMATION TECHNOLOGY AND ENVIRONMENTAL SYSTEM SCIENCES. 2008. Kaifeng, CHINA, .(A&HCI).",
 	  "level": "A&HCI",
 	  "image": "2008_2.png"
     },
 	{
       "year": "2008",
 	  "type": "Journal article",
-      "article": "周隽, 花向红, 涂伟, 李昭. 基于移动GIS 的小型移动应急平台的设计和实现. 测绘工程. 2008, 17(2), 39-42.(CSCD).",
+      "article": "周隽, 花向红*, 涂伟, 李昭. 基于移动GIS 的小型移动应急平台的设计和实现. 测绘工程. 2008, 17(2), 39-42.(CSCD).",
 	  "level": "CSCD",
 	  "image": "2008_1.png"
     }
