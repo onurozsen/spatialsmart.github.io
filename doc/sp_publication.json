@@ -1,10 +1,17 @@
 {
   "publications": [
-{
+    {
       "year": "2018",
 	  "type": "Journal article",
-      "article": "Xiaohu Zhang, Yang Xu*, Wei Tu, Carlo Ratti, Do different datasets tell the same story about urban mobility — A comparative study of public transit and taxi usage, Journal of Transport Geography,  2018, 70,  78-90.",
+      "article": "Baoding Zhou, Qingquan Li*, Guanxun Zhai, Qingzhou Mao, Jun Yang, Wei Tu, Weixing Xue, Long Chen. A Graph Optimization-based Indoor Map Construction Method via Crowdsourcing. IEEE Access, 2018 (accepted).",
 	  "level": "SCI",
+	  "image": "2018_6.png"
+    },
+	{
+      "year": "2018",
+	  "type": "Journal article",
+      "article": "Xiaohu Zhang, Yang Xu*, Wei Tu, Carlo Ratti. Do different datasets tell the same story about urban mobility — A comparative study of public transit and taxi usage. Journal of Transport Geography. 2018, 70, 78-90.",
+	  "level": "SSCI",
 	  "image": "2018_5.png"
     },
     {
@@ -111,7 +118,7 @@
 	{
       "year": "2016",
 	  "type": "Journal article",
-      "article": "Rui Cao, Wei Tu*, Baicong Chao, Nianxue Luo, Meng Zhou, Qingquan Li. Identification and Analysis of Home and Work Regions in the Vicinity of Metro Stations Using Smart Card Data. Journal of Geomatics. 2016, 41, 74-78. （曹瑞, 涂伟*, 巢佰崇, 罗年学, 周檬, 李清泉. 基于智能卡数据的地铁周边职住用地识别与分析. 测绘地理信息. 2016, 41, 74-78.(CSCD).）",
+      "article": "Rui Cao, Wei Tu*, Baicong Chao, Nianxue Luo, Meng Zhou, Qingquan Li. Identification and Analysis of Home and Work Regions in the Vicinity of Metro Stations Using Smart Card Data. Journal of Geomatics. 2016, 41, 74-78. （曹瑞, 涂伟*, 巢佰崇, 罗年学, 周檬, 李清泉. 基于智能卡数据的地铁周边职住用地识别与分析. 测绘地理信息. 2016, 41, 74-78.(CSCD).",
 	  "level": "CSCD",
 	  "image": "2016_1.png"
     },
