@@ -1,6 +1,13 @@
 {
   "publications": [
-    {
+
+      "year": "2018",
+	  "type": "Journal article",
+      "article": "Xiaohu Zhang, Yang Xu*, Wei Tu, Carlo Ratti. Do different datasets tell the same story about urban mobility - A comparative study of public transit and taxi usage. Journal of Transport Geography. 2018, 70, 78-90.(SSCI).",
+	  "level": "SSCI",
+	  "image": "2018_5.png"
+    },
+	{
       "year": "2018",
 	  "type": "Journal article",
       "article": "Baoding Zhou, Qingquan Li*, Guanxun Zhai, Qingzhou Mao, Jun Yang, Wei Tu, Weixing Xue, Long Chen. A Graph Optimization-based Indoor Map Construction Method via Crowdsourcing. IEEE Access, 2018. (accepted).",
